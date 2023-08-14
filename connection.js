@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 function connect(){
-    const db = mongoose.connect('mongodb+srv://kk8250762:NL7vPhfRoqveJoSf@cluster0.tim695q.mongodb.net/demo?retryWrites=true&w=majority')
+    const db = mongoose.connect("paste connection path")
         .then(() => {
             console.log('connection sucessfull')
         }).catch((err) => {
